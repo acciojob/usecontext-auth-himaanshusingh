@@ -1,13 +1,16 @@
-
-import React from "react";
-import './../styles/App.css';
+import React, { useState } from "react";
+import "../styles/App.css";
+import AuthContext from "./AuthContext";
+import Auth from "./Auth";
 
 const App = () => {
-  return (
-    <div>
-        {/* Do not remove the main div */}
-    </div>
-  )
-}
+  const [check, setCheck] = useState(false);
 
-export default App
+  return (
+    <AuthContext.Provider value={[check, setCheck]}>
+      <Auth />
+    </AuthContext.Provider>
+  );
+};
+
+export default App;
