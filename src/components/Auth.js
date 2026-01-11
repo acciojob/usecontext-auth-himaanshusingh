@@ -9,7 +9,7 @@ const Auth = () => {
   return (
     <div>
       <h1>Click on the checkbox to get authenticated</h1>
-      <h2>{check ? checkText : unCheckText}</h2>
+      <p className="authText">{check ? checkText : unCheckText}</p>
       <input type="checkbox" onClick={() => setCheck(!check)} />
       <span>I am not a robot</span>
     </div>
