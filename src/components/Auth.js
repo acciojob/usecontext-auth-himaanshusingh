@@ -4,7 +4,7 @@ import AuthContext from "./AuthContext";
 const Auth = () => {
   const [check, setCheck] = useContext(AuthContext);
   const checkText = "You are now authenticated, you can proceed";
-  const unCheckText = "You are not authenticated";
+  const unCheckText = "you are not authenticated";
 
   return (
     <div>
